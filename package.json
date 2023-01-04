@@ -1,0 +1,19 @@
+{
+  "name": "dividejs",
+  "version": "0.0.1",
+  "description": "JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DIY0R/dividejs.git"
+  },
+  "author": " <github.com/DIY0R>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DIY0R/dividejs/issues"
+  },
+  "homepage": "https://github.com/DIY0R/dividejs#readme"
+}
