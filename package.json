@@ -4,7 +4,9 @@
   "description": "JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "npm run jest"
+    "test": "npm run jest",
+    "build": "tsc",
+    "dev": "tsc --watch"
   },
   "repository": {
     "type": "git",
