@@ -45,6 +45,10 @@ lib/
 node_modules/
 jspm_packages/
 
+
+#docs for api
+docs/api
+
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 
