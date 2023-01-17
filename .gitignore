@@ -136,6 +136,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-
+./development
 
 #copied github/gitignore
