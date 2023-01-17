@@ -12,11 +12,11 @@ Example
 const algorithms = new Algorithms();
 const divJs = new Divide(algorithms);
 
-//start in main thread
+//run in main thread
 const num = divJs.sum("789", "32", "main");
 console.log(num);
 
-//start in other thread
+//run in another thread
 const num = divJs.sum("789", "32", "worker");
 num.then((res) => console.log(res));
 ```
