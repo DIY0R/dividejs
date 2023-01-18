@@ -1,4 +1,4 @@
-module.exports = class Algorithms {
+class SumCommonCode {
   sum(a, b) {
     let bigNum = a.length > b.length ? a : b;
     let litleNum = a.length > b.length ? b : a;
@@ -12,7 +12,8 @@ module.exports = class Algorithms {
       result.unshift(snum.at(-1));
       if (snum.length > 1) memoryNum = +(snum[0] || 0);
     }
-
     return result.join("");
   }
-};
+}
+
+module.exports = new SumCommonCode();
