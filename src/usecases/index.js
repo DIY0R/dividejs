@@ -1,3 +1,3 @@
 const SUM = require("./sum.usecase");
-
-module.exports = { SUM };
+const Divilor = require("./divilor.usecase");
+module.exports = { SUM, Divilor };

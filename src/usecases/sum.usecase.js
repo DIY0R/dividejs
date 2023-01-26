@@ -8,17 +8,14 @@ class SUM {
   }
   sum(a, b, type) {
     if (type == "main") return this.algorithms.sum(a, b);
-    const worker = cp.fork(path.join(__dirname, "../workers/sum.js"));
+    const worker = cp.exec(path.join(__dirname, "../workers/sum.js"));
     worker.send({ a, b });
     return new Promise((resole, rejected) => {
       worker.on("message", (message) => {
         resole(message);
         worker.kill();
       });
-      worker.on("exit", (code) => {
-        rejected(code);
-        process.exit(1);
-      });
+      worker.on("error", (code) => rejected(code));
     });
   }
 }
