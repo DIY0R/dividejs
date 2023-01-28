@@ -15,7 +15,8 @@ class SUM {
         resole(message);
         worker.kill();
       });
-      worker.on("error", (code) => rejected(code));
+      worker.on("exit", (code) => rejected({ list: "exite", code }));
+      worker.on("error", (code) => rejected({ list: "error", code }));
     });
   }
 }
